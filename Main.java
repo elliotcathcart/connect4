@@ -38,7 +38,7 @@ public class Main {
         char[][] board = {{' ', ' ', ' ', ' ', ' '}, {' ', ' ', ' ', ' ', ' '}, {' ', ' ', ' ', ' ', ' '}, {' ', ' ', ' ', ' ', ' '}};
 
         int i = 0;
-        while (true) {
+        while (i <= 20) {
             printBoard(board);
 
             if (i % 2 == 0) {
@@ -55,12 +55,7 @@ public class Main {
                 }
             }
             i++;
-            if (i == 20) {
-                System.out.println("This game is a tie! You both suck!");
-                break;
-            }
         }
-
     }
 
     public static void playerTurn(char[][] board, char letter, int player) {
