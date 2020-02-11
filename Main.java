@@ -54,6 +54,9 @@ public class Main {
                     break;
                 }
             }
+            if (i == 20) {
+                System.out.println("It's a tie!");
+            }
             i++;
         }
     }
